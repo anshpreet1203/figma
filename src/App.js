@@ -38,7 +38,7 @@ const App = () => {
       <header>
         <div className="first-container">
           <div className="navbar">
-            <div className="dev">--Developer</div>
+            <div className="dev">--Software Engineer</div>
 
             {/* Hamburger icon that appears on small screens */}
             <div className="hamburger" onClick={toggleMenu}>
@@ -54,17 +54,29 @@ const App = () => {
                 <li onClick={() => scrollToSection(discussRef)} className="contact-li">Contact Us</li>
               </ul>
             </div>
-            <div className="contact-nav" onClick={() => scrollToSection(discussRef)}>Contact Us</div>
+             
+              <div className="contact-nav" onClick={() => scrollToSection(discussRef)}>
+                <a href='tel:7428040855'  style={{ textDecoration: 'none', color: 'rgb(15, 62, 46)' }}>
+                Contact Us</a><img src='/arrow.png' alt='arw' className='arw-1'>
+                </img>
+                </div>
+                
           </div>
 
          <div className="parent" ref={homeRef}>
 
           <div className="info">
-            <div className="name">&lt;DEV SINDHWANI&gt;</div>
+            <div className="name">DEV SINDHWANI</div>
             <div className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi et voluptas sequi numquam, aspernatur consequatur aperiam, adipisci nobis laudantium omnis quibusdam vel ducimus eius totam animi obcaecati ullam! Commodi!
             </div>
-            <div className="contact-us">Contact Us</div>
+            <a href='tel:7428040855' className='num' style={{ textDecoration: 'none', color: 'rgb(15, 62, 46)' }}>
+              <div className="contact-us">
+                Contact Us
+                <img src='/arrow.png' alt='arw' className='arw-1'>
+                </img>
+                </div>
+                </a>
           </div>
 
           <div className='photos'>
@@ -90,7 +102,7 @@ const App = () => {
           <div className="text-pjt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error obcaecati earum porro omnis aperiam vitae assumenda illum amet, nihil id neque, saepe quia consequuntur dolorem ex temporibus? Sapiente, enim?
           </div>
-           <div className='visit'>Visit Us<img src='/arrow.png' className='arrow'></img></div>
+           <div className='visit'>Visit Us<img src='/arrow.png' className='arrow' alt='arw'></img></div>
         </div>
 
         <img src='/cell.png' alt='cell' className='cell'></img>
@@ -103,7 +115,7 @@ const App = () => {
           <div className="text-pjt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error obcaecati earum porro omnis aperiam vitae assumenda illum amet, nihil id neque, saepe quia consequuntur dolorem ex temporibus? Sapiente, enim?
           </div>
-          <div className='visit'>Visit Us<img src='/arrow.png' className='arrow'></img></div>
+          <div className='visit'>Visit Us<img src='/arrow.png' className='arrow' alt='arw'></img></div>
         </div>
       </div>
 
@@ -169,7 +181,7 @@ const App = () => {
       {/* DISCUSSION */}
       <div className="fourth-container" ref={discussRef}>
         <div className="discuss">Let's Discuss About Your Project</div>
-        <div className="contact">Contact Us</div>
+         <a href='tel:7428040855' className='num' style={{ textDecoration: 'none'}}><div className="contact">Contact Us</div></a>
       </div>
       {/*FOOTER */}
       <div className='footer-container'>
