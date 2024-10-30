@@ -108,6 +108,7 @@ body{
 
 .dev{
     color: rgb(223, 224, 172);
+    font-size: 20px;
 }
 
 .contact-nav{
@@ -154,6 +155,7 @@ body{
     font-size: 4rem;
     color:  rgb(223, 224, 172);
     font-weight:900;
+    font-style: italic;
     
 }
 
@@ -1026,6 +1028,7 @@ height: 200px;
     }
 
     .dev{
+        padding-left: 1rem;
         font-size: 1.5rem;
     }
 
