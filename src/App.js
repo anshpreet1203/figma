@@ -203,10 +203,11 @@ const App = () => {
       <div className="third-container">
         <div className="abt-content">
           <div className="txt-abt">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            voluptates officia fugiat atque harum cumque, officiis autem
-            corporis eveniet ducimus quod, molestiae, earum sed? Voluptate
-            fugiat qui tempora similique doloribus!
+            We are a team of skilled software developers with a deep expertise
+            in modern web and mobile technologies, including Vue.js, React.js,
+            PHP, Laravel, CodeIgniter, Kotlin, and Flutter. Our passion lies in
+            creating user-focused applications that simplify workflows, optimize
+            processes, and add tangible value to our clients' operations.
           </div>
         </div>
 
