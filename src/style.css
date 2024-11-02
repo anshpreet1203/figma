@@ -292,14 +292,14 @@ body{
 }
 
 .contact{
-    display:inline-block;
-    width: 15%;
+    display:inline-flex;
+    width: 19%;
     height: 50px;
     font-size: 2rem;
     background-color: rgb(13, 68, 50);
     border-radius: 50px;
     color:rgb(223, 224, 172) ;
-    padding: .2rem 0 0 0 ;
+    padding: .2rem 0 0 12px ;
 }
 
 
@@ -749,7 +749,7 @@ height: 200px;
     .third-container{
         flex-direction: column;
         margin-bottom: 4rem;
-        height: 670px;
+        height: 873px;
     }
     
     .cell{

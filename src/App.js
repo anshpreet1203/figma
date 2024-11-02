@@ -44,7 +44,8 @@ const App = () => {
             <div className={`tabs ${isOpen ? "open" : ""}`}>
               <ul className="tab-btn">
                 <li onClick={() => scrollToSection(homeRef)}>Home</li>
-                <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+                <li onClick={() => scrollToSection(projectsRef)}>Services</li>
+                {/* <li onClick={() => scrollToSection(projectsRef)}>Projects</li> */}
                 <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
                 <li
                   onClick={() => scrollToSection(discussRef)}
@@ -222,23 +223,44 @@ const App = () => {
           className="num"
           style={{ textDecoration: "none" }}
         >
-          <div className="contact">Contact Us</div>
+          <div className="contact">
+            Contact Us
+            <img src="/arrow.png" alt="arw" className="arw-1"></img>
+          </div>
         </a>
       </div>
       {/*FOOTER */}
       <div className="footer-container">
         <div className="footer">
           <div className="linkedin">
-            <FontAwesomeIcon icon={faLinkedin} />{" "}
-            <span className="text-f">Linkedin</span>
+            <a
+              href="https://www.linkedin.com/in/dev-sindhwani-297b481b1/"
+              style={{ color: "black", textDecoration: "none" }}
+              target="__blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />{" "}
+              <span className="text-f">Linkedin</span>
+            </a>
           </div>
           <div className="Email">
-            <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <span className="text-f">EMAIL@gmail.com</span>
+            <a
+              href="mailto:dev16sindh@gmail.com"
+              style={{ color: "black", textDecoration: "none" }}
+              target="__blank"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span className="text-f">dev16sindh@gmail.com</span>
+            </a>
           </div>
           <div className="Git">
-            <FontAwesomeIcon icon={faGithub} />
-            <span className="text-f">GITHUB</span>
+            <a
+              href="https://github.com/dev1662"
+              style={{ color: "black", textDecoration: "none" }}
+              target="__blank"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+              <span className="text-f">Github</span>
+            </a>
           </div>
         </div>
 
