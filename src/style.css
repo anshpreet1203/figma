@@ -4,7 +4,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Poppins",
+        sans-serif;
     box-sizing: border-box;
     
 }
@@ -16,6 +17,9 @@ body{
    margin: 0 auto;
 }
 
+.project{
+    font-weight: 600;
+}
 
 .first-container{
      background: linear-gradient(to top, #468585, #75B18D);
@@ -68,7 +72,7 @@ body{
 }
 
 .third-container{
-    background-color:white;
+    /* background-color:white; */
     width: 95%;
     height: 400px;
     margin-top: 2rem;
@@ -85,7 +89,7 @@ body{
 .fourth-container{
     background-color:rgb(185, 240, 175);
     width: 95%;
-    height: 250px;
+    height: 290px;
     margin-top: 2rem;
     margin-left: 3%;
     margin-right: 3%;
@@ -108,6 +112,7 @@ body{
 
 .dev{
     color: rgb(223, 224, 172);
+    font-size: 20px;
 }
 
 .contact-nav{
@@ -151,15 +156,17 @@ body{
     
 }
 .name{
+    letter-spacing: 2px;
     font-size: 4rem;
     color:  rgb(223, 224, 172);
-    font-weight:900;
+    font-weight:800;
+    font-style: italic;
     
 }
 
 .text{
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
 }
 
@@ -229,7 +236,7 @@ body{
 
 .project{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
     font-size: 5rem;
 }
 
@@ -244,7 +251,7 @@ body{
 }
 
 .text-pjt{
- font-size: 2rem;
+ font-size: 1.7rem;
  margin-top: 1rem;
  color: rgb(54, 167, 129);
 }
@@ -287,13 +294,17 @@ body{
 
 
 .abt-content{
-    width: 70%;
+    width: 55%;
+}
+.img-abt{
+    width: 40%;
 }
 
 .txt-abt{
     margin-top: 1rem;
-    font-size: 2.5rem;
-    color: rgb(54, 167, 129);
+    font-size: 1.5rem;
+    /* color: rgb(54, 167, 129); */
+    color: rgb(74 85 81);
 }
 
 .cell{
@@ -308,14 +319,14 @@ body{
 }
 
 .contact{
-    display:inline-block;
-    width: 15%;
+    display:inline-flex;
+    width: 19%;
     height: 50px;
     font-size: 2rem;
     background-color: rgb(13, 68, 50);
     border-radius: 50px;
     color:rgb(223, 224, 172) ;
-    padding: .2rem 0 0 0 ;
+    padding: .2rem 0 0 12px ;
 }
 
 
@@ -698,7 +709,8 @@ body{
 }
 
 .txt-abt{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-inline: 1rem;
     
 }
 
@@ -764,7 +776,7 @@ height: 200px;
     .third-container{
         flex-direction: column;
         margin-bottom: 4rem;
-        height: 670px;
+        height: 873px;
     }
     
     .cell{
@@ -837,7 +849,7 @@ height: 200px;
     }
 
     .text{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .navbar{
@@ -1053,6 +1065,7 @@ height: 200px;
     }
 
     .dev{
+        padding-left: 1rem;
         font-size: 1.5rem;
     }
 
