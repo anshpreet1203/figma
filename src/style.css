@@ -194,10 +194,37 @@ body{
 
 /***BRANDS***/
 
+
+
+.brands{
+  width: 90%;               /* Full width container */
+  overflow: hidden;          /* Hide overflowing logos */
+  position: relative;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.brands-wrapper {
+  display: inline-flex;             /* Flexbox to arrange logos in a row */
+  animation: scroll 15s linear infinite; /* Continuous scrolling animation */
+  width: auto;
+}
+
 .logos{
-    margin: 8rem 3% 8rem 3%;
-    width: 92%;
-    mix-blend-mode: multiply;
+   margin-right: 2rem; 
+    width: 20%;
+    height: 100px;
+    object-fit: contain;        /* Ensure logos maintain their aspect ratio */
+    flex-shrink: 0; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);  /* Move the image completely out of view */
+  }
 }
 
 .project{
