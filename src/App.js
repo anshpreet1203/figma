@@ -112,7 +112,19 @@ const App = () => {
       {/* BRANDS */}
 
       <div className='brands'>
-        <img src='/Brands.jpg' alt='logo' className='logos' ></img>
+        <div className='brands-wrapper'>
+        <img src='/apple.png' alt='logo' className='logos' ></img>
+        <img src='/google.png' alt='logo' className='logos' ></img>
+        <img src='/ad.png' alt='logo' className='logos' ></img>
+        <img src='/samsung.png' alt='logo' className='logos' ></img>
+        <img src='/nike.png' alt='logo' className='logos' ></img>
+
+        <img src='/apple.png' alt='logo' className='logos' ></img>
+        <img src='/google.png' alt='logo' className='logos' ></img>
+        <img src='/ad.png' alt='logo' className='logos' ></img>
+        <img src='/samsung.png' alt='logo' className='logos' ></img>
+        <img src='/nike.png' alt='logo' className='logos' ></img>
+        </div>
       </div>
 
 
