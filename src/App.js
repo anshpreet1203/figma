@@ -87,7 +87,7 @@ const App = () => {
                 style={{ textDecoration: "none", color: "rgb(15, 62, 46)" }}
               >
                 <div className="contact-us">
-                  Contact Us
+                  Know More
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
                 </div>
               </a>
@@ -177,16 +177,31 @@ const App = () => {
                 <img src="/img.jpg" alt="Slide 1" className="card-image" />
                 <h3>First Project</h3>
                 <p>Project details for the first project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
+
               <div className="small-card">
                 <img src="/img.jpg" alt="Slide 2" className="card-image" />
                 <h3>Second Project</h3>
                 <p>Project details for the second project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
+              
+
               <div className="small-card">
                 <img src="/img.jpg" alt="Slide 3" className="card-image" />
                 <h3>Third Project</h3>
                 <p>Project details for the third project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
             </div>
           </Carousel.Item>
@@ -196,16 +211,30 @@ const App = () => {
                 <img src="/img.jpg" alt="Slide 4" className="card-image" />
                 <h3>Fourth Project</h3>
                 <p>Project details for the fourth project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
+
               <div className="small-card">
                 <img src="/img.jpg" alt="Slide 5" className="card-image" />
                 <h3>Fifth Project</h3>
                 <p>Project details for the fifth project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
+
               <div className="small-card">
                 <img src="/img.jpg" alt="Slide 6" className="card-image" />
                 <h3>Sixth Project</h3>
                 <p>Project details for the sixth project.</p>
+                <div className="visit-us">
+                  Visit Us
+                  <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
               </div>
             </div>
           </Carousel.Item>
