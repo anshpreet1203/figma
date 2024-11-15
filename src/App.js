@@ -229,7 +229,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="small-card">
+              {/*<div className="small-card">
                 <img src="/img.jpg" alt="Slide 6" className="card-image" />
                 <h3>Sixth Project</h3>
                 <p>Project details for the sixth project.</p>
@@ -237,7 +237,7 @@ const App = () => {
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </Carousel.Item>
         </Carousel>

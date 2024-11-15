@@ -207,7 +207,7 @@ body{
   width: 90%;               /* Full width container */
   overflow: hidden;          /* Hide overflowing logos */
   position: relative;
-  margin: 5rem auto;
+  margin: 10rem auto;
   padding: 0 2rem;
 }
 
@@ -218,7 +218,7 @@ body{
 }
 
 .logos{
-   margin-right: 2rem; 
+   margin-right: 4rem; 
     width: 20%;
     height: 100px;
     object-fit: contain;        /* Ensure logos maintain their aspect ratio */
@@ -359,15 +359,16 @@ body{
 
 .small-card {
   flex: 0 0 30%; /* Each card takes up 30% of the carousel's width */
-  padding: 0px 0 10px 0;
+  padding: 2rem 1rem 10px 2rem;
   height: 100%;
    display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -472,12 +473,16 @@ body{
     .info{
         width:55%;
     }
+
+    .visit{
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 1600px){
 
     .visit{
-        width: 30%;
+        width: 40%;
     }
 
     .tabs{
