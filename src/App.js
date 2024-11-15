@@ -87,7 +87,7 @@ const App = () => {
                 style={{ textDecoration: "none", color: "rgb(15, 62, 46)" }}
               >
                 <div className="contact-us">
-                  Know More
+                 Contact Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
                 </div>
               </a>
@@ -95,15 +95,15 @@ const App = () => {
 
             <div className="photos">
               <img
-                src="/mobile.png"
+                src="/gp.png"
                 className="mobile nav-photo"
                 alt="mob"
               ></img>
-              <img
+              {/*<img
                 src="/border.png"
                 className="border-1 nav-photo"
                 alt="mob"
-              ></img>
+              ></img>*/}
             </div>
           </div>
         </div>
@@ -113,17 +113,19 @@ const App = () => {
 
       <div className='brands'>
         <div className='brands-wrapper'>
-        <img src='/apple.png' alt='logo' className='logos' ></img>
-        <img src='/google.png' alt='logo' className='logos' ></img>
-        <img src='/ad.png' alt='logo' className='logos' ></img>
-        <img src='/samsung.png' alt='logo' className='logos' ></img>
-        <img src='/nike.png' alt='logo' className='logos' ></img>
+        <img src='/fly.png' alt='logo' className='logos' ></img>
+        <img src='/oas.png' alt='logo' className='logos' ></img>
+        <img src='/my.webp' alt='logo' className='logos' ></img>
+        <img src='/lance.png' alt='logo' className='logos' ></img>
+        <img src='/logo.jpg' alt='logo' className='logos' ></img>
 
-        <img src='/apple.png' alt='logo' className='logos' ></img>
-        <img src='/google.png' alt='logo' className='logos' ></img>
-        <img src='/ad.png' alt='logo' className='logos' ></img>
-        <img src='/samsung.png' alt='logo' className='logos' ></img>
-        <img src='/nike.png' alt='logo' className='logos' ></img>
+        <img src='/fly.png' alt='logo' className='logos' ></img>
+        <img src='/oas.png' alt='logo' className='logos' ></img>
+        <img src='/my.webp' alt='logo' className='logos' ></img>
+        <img src='/lance.png' alt='logo' className='logos' ></img>
+        <img src='/logo.jpg' alt='logo' className='logos' ></img>
+
+        
         </div>
       </div>
 
@@ -144,7 +146,7 @@ const App = () => {
             here to make it happen.
           </div>
           <div className="visit">
-            Visit Us<img src="/arrow.png" className="arrow" alt="arw"></img>
+            Know More<img src="/arrow.png" className="arrow" alt="arw"></img>
           </div>
         </div>
 
@@ -162,7 +164,7 @@ const App = () => {
             business and reach your audience effectively.
           </div>
           <div className="visit">
-            Visit Us<img src="/arrow.png" className="arrow" alt="arw"></img>
+            Know More<img src="/arrow.png" className="arrow" alt="arw"></img>
           </div>
         </div>
       </div>
@@ -174,7 +176,7 @@ const App = () => {
           <Carousel.Item>
             <div className="carousel-item-wrapper">
               <div className="small-card">
-                <img src="/img.jpg" alt="Slide 1" className="card-image" />
+                <img src="/oas.png" alt="Slide 1" className="card-image" />
                 <h3>First Project</h3>
                 <p>Project details for the first project.</p>
                 <div className="visit-us">
@@ -184,7 +186,7 @@ const App = () => {
               </div>
 
               <div className="small-card">
-                <img src="/img.jpg" alt="Slide 2" className="card-image" />
+                <img src="/my.webp" alt="Slide 2" className="card-image" />
                 <h3>Second Project</h3>
                 <p>Project details for the second project.</p>
                 <div className="visit-us">
@@ -195,7 +197,7 @@ const App = () => {
               
 
               <div className="small-card">
-                <img src="/img.jpg" alt="Slide 3" className="card-image" />
+                <img src="/logo.jpg" alt="Slide 3" className="card-image" />
                 <h3>Third Project</h3>
                 <p>Project details for the third project.</p>
                 <div className="visit-us">
@@ -208,7 +210,7 @@ const App = () => {
           <Carousel.Item>
             <div className="carousel-item-wrapper">
               <div className="small-card">
-                <img src="/img.jpg" alt="Slide 4" className="card-image" />
+                <img src="/lance.png" alt="Slide 4" className="card-image" />
                 <h3>Fourth Project</h3>
                 <p>Project details for the fourth project.</p>
                 <div className="visit-us">
@@ -218,7 +220,7 @@ const App = () => {
               </div>
 
               <div className="small-card">
-                <img src="/img.jpg" alt="Slide 5" className="card-image" />
+                <img src="/fly.png" alt="Slide 5" className="card-image" />
                 <h3>Fifth Project</h3>
                 <p>Project details for the fifth project.</p>
                 <div className="visit-us">
