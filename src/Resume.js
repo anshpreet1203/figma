@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "./new.css";
 import ScoreIndicator from './rating';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 // Ensure your CSS file exists and is correct
@@ -11,7 +11,9 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 const Resume = () => {
     return (
         <div>
-            <div className="resume">Resume</div>
+            <div className="resume">Resume
+                <FontAwesomeIcon icon={faComputerMouse} className="mouse"/>
+            </div>
                 <div className="res-container">
                     <div className="res-text">Productive full-stack developer, with 4+ years of experience building and maintaining responsive websites across different sectors. Constantly received high user experience scores for every web development project. I am a keen learner who keeps an eye on modern technology so my work reflects the new trends like dynamic content, beautiful designs, and load speed effecting.</div>
 

@@ -20,6 +20,7 @@ body{
     background: linear-gradient(to top, #468585, #75B18D);
     height: 1000px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 6rem;
@@ -29,6 +30,23 @@ body{
     overflow: hidden;
     
 }
+
+.mouse{
+    margin-top: 10rem;
+    font-size: 2rem;
+    animation: moveUpDown 1s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back to the original position */
+}}
 
 /*****RESUME*****/
 .res-container{
