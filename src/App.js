@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel"; // Import Carousel
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "./style.css";
 import Resume from './Resume';  // Importing Resume component (inside src folder)
-import ScoreIndicator from './rating';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

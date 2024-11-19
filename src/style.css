@@ -331,13 +331,14 @@ body{
 
 .contact{
     display:inline-flex;
+    justify-content: center;
     width: 17%;
     height: 60px;
     font-size: 1.3rem;
     background-color: rgb(13, 68, 50);
     border-radius: 50px;
     color:rgb(223, 224, 172) ;
-    padding: .5rem 0 0 4.5rem ;
+    align-items: center;
 }
 
 
