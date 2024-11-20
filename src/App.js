@@ -45,7 +45,7 @@ const App = () => {
       {/* HEADER */}
       <header>
         <div className="first-container">
-          <div className="navbar">
+          <div className="navbar1">
             <div className="dev">Software Engineer</div>
 
             {/* Hamburger icon that appears on small screens */}
