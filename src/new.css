@@ -64,7 +64,7 @@ body{
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
-    background-color:white;
+    background-color:rgb(185, 240, 175);
 
 }
 
@@ -95,7 +95,7 @@ body{
     box-sizing: border-box;
     display: flex;
     gap: 4rem;
-    background-color:white;
+    background-color:rgb(185, 240, 175);
 }
 
 .exp-container{
@@ -147,7 +147,11 @@ body{
 }
 
 .circle.filled {
-  background-color: rgb(185, 240, 175);;
+  background-color: rgb(185, 240, 175);
+}
+
+.circle.filled:hover {
+  background-color: #468585;
 }
 
 /**Knowledge**/
@@ -168,7 +172,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
-    background-color:white; 
+    background-color:rgb(185, 240, 175); 
     font-size: 2rem;
 }
 
@@ -194,13 +198,15 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
-    background-color:white; 
+    background-color:rgb(185, 240, 175); 
     font-size: 1rem;
 }
 
 .service{
     width: 20%;
 }
+
+
 
 
 

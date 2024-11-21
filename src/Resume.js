@@ -14,6 +14,7 @@ const Resume = () => {
             <div className="resume">Resume
                 <FontAwesomeIcon icon={faComputerMouse} className="mouse"/>
             </div>
+            <div className="project">About Me</div>
                 <div className="res-container">
                     <div className="res-text">Productive full-stack developer, with 4+ years of experience building and maintaining responsive websites across different sectors. Constantly received high user experience scores for every web development project. I am a keen learner who keeps an eye on modern technology so my work reflects the new trends like dynamic content, beautiful designs, and load speed effecting.</div>
 
@@ -60,6 +61,7 @@ const Resume = () => {
 
                 </div>
 
+            <div className="project">Skills</div>
                 {/*ratings*/}
                 <div className="rating-container">
                     <div className="lang-container">
@@ -120,7 +122,7 @@ const Resume = () => {
                 </div>
 
                 {/**My services */}
-
+            <div className="project">Services</div>
                 <div className="ser-container">
                     <div className="service">
                         <div className="front">Front-end</div>
