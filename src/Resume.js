@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "./new.css";
 import ScoreIndicator from './rating';
@@ -6,14 +7,81 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 // Ensure your CSS file exists and is correct
 
 const Resume = () => {
+
+    const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
+
+    const homeRef = useRef(null);
+    const projectsRef = useRef(null);
+    const aboutRef = useRef(null);
+    const discussRef = useRef(null);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); // Toggle dropdown
+    };
+
+
+
+    const scrollToSection = (ref) => {
+        if (ref.current) {
+            ref.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div>
+
+            
+            <div className='resume-container'>
+
+                <div className="navbar2">
+                <div className="dev">Software Engineer</div>
+
+                {/* Hamburger icon that appears on small screens */}
+                <div className="hamburger" onClick={toggleMenu}>
+                    &#9776; {/* Unicode for hamburger icon */}
+                </div>
+
+                {/* Tabs for the navbar, which are conditionally shown based on screen size and state */}
+                <div className={`tabs ${isOpen ? "open" : ""}`}>
+                    <ul className="tab-btn">
+                        <li onClick={() => scrollToSection(homeRef)}>Home</li>
+                        <li onClick={() => scrollToSection(projectsRef)}>Services</li>
+                        <li><Link to="/resume" onClick={() => setIsOpen(false)} className="link">Resume</Link></li>
+
+                        <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
+                        <li
+                            onClick={() => scrollToSection(discussRef)}
+                            className="contact-li"
+                        >
+                            Contact Us
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    className="contact-nav"
+                    onClick={() => scrollToSection(discussRef)}
+                >
+                    <a
+                        href="tel:7428040855"
+                        style={{ textDecoration: "none", color: "rgb(15, 62, 46)" }}
+                    >
+                        Contact Us
+                    </a>
+                    <img src="/arrow.png" alt="arw" className="arw-1"></img>
+                </div>
+                </div>
+
             <div className="resume">Resume
                 <FontAwesomeIcon icon={faComputerMouse} className="mouse"/>
             </div>
+            </div>
+
+
             <div className="project">About Me</div>
                 <div className="res-container">
                     <div className="res-text">Productive full-stack developer, with 4+ years of experience building and maintaining responsive websites across different sectors. Constantly received high user experience scores for every web development project. I am a keen learner who keeps an eye on modern technology so my work reflects the new trends like dynamic content, beautiful designs, and load speed effecting.</div>

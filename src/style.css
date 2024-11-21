@@ -122,6 +122,7 @@ body{
 .dev{
     color: rgb(223, 224, 172);
     font-size: 20px;
+
 }
 
 .contact-nav{
@@ -170,9 +171,11 @@ body{
     font-size: 4rem;
     color:  rgb(223, 224, 172);
     font-weight:800;
-    font-style: italic;
+    
     
 }
+
+
 
 .text{
     margin-top: 1rem;
