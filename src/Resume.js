@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "./new.css";
 import ScoreIndicator from './rating';
@@ -7,6 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import App from "./App";
 
 // Ensure your CSS file exists and is correct
 
@@ -32,6 +36,7 @@ const Resume = () => {
     };
 
     return (
+        
         <div>
 
             
@@ -48,11 +53,11 @@ const Resume = () => {
                 {/* Tabs for the navbar, which are conditionally shown based on screen size and state */}
                 <div className={`tabs ${isOpen ? "open" : ""}`}>
                     <ul className="tab-btn">
-                        <li onClick={() => scrollToSection(homeRef)}>Home</li>
-                        <li onClick={() => scrollToSection(projectsRef)}>Services</li>
+                            <li onClick={() => scrollToSection(homeRef)}><Link to="/" onClick={() => setIsOpen(false)} className="link">Home</Link></li>
+                            <li onClick={() => scrollToSection(projectsRef)}><Link to="/" onClick={() => setIsOpen(false)} className="link">Services</Link></li>
                         <li><Link to="/resume" onClick={() => setIsOpen(false)} className="link">Resume</Link></li>
 
-                        <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
+                            <li onClick={() => scrollToSection(aboutRef)}><Link to="/" onClick={() => setIsOpen(false)} className="link">About Us</Link></li>
                         <li
                             onClick={() => scrollToSection(discussRef)}
                             className="contact-li"
@@ -61,6 +66,8 @@ const Resume = () => {
                         </li>
                     </ul>
                 </div>
+
+
 
                 <div
                     className="contact-nav"
@@ -226,9 +233,45 @@ const Resume = () => {
 
 
 
+            <div className="footer-container">
+                <div className="footer">
+                    <div className="linkedin">
+                        <a
+                            href="https://www.linkedin.com/in/dev-sindhwani-297b481b1/"
+                            style={{ color: "black", textDecoration: "none" }}
+                            target="__blank"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} />{" "}
+                            <span className="text-f">Linkedin</span>
+                        </a>
+                    </div>
+                    <div className="Email">
+                        <a
+                            href="mailto:dev16sindh@gmail.com"
+                            style={{ color: "black", textDecoration: "none" }}
+                            target="__blank"
+                        >
+                            <FontAwesomeIcon icon={faEnvelope} />{" "}
+                            <span className="text-f">dev16sindh@gmail.com</span>
+                        </a>
+                    </div>
+                    <div className="Git">
+                        <a
+                            href="https://github.com/dev1662"
+                            style={{ color: "black", textDecoration: "none" }}
+                            target="__blank"
+                        >
+                            <FontAwesomeIcon icon={faGithub} />
+                            <span className="text-f">Github</span>
+                        </a>
+                    </div>
+                </div>
+
+
                 <div className="copyright">
                     All rights reserved <FontAwesomeIcon icon={faCopyright} /> 2024
                 </div>
+            </div>
             </div>
         
     );

@@ -10,8 +10,7 @@ body{
     width:100%;
     padding: 0 ;
     margin: 0 auto;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    
     
 }
 
@@ -26,9 +25,23 @@ body{
     padding: 2rem 5rem;
 }
 
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0rem;
+    margin: 0;
+    font-size: .5rem;
+    overflow: auto;
+}
+
+.tab-btn{
+    margin: 0;
+}
+
 .resume{
     max-width: 100%;
-    height: 1000px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +50,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
     
 }
 
@@ -64,8 +77,8 @@ body{
     width: 95%;
     height: 400px;
     margin-top: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:50px;
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -74,6 +87,7 @@ body{
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
+    
     background-color:rgb(185, 240, 175);
 
 }
@@ -84,9 +98,9 @@ body{
 
 .res-info{
      display: grid;                 /* Enable grid layout */
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  grid-template-rows: repeat(2, auto);  /* 2 rows */
-  gap: 1rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+     grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 1rem;
 }
 
 
@@ -96,8 +110,8 @@ body{
     width: 95%;
     height: 600px;
     margin-top: 2rem;
-    margin-left: 2%;
-    margin-right: 1%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:50px;
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -106,12 +120,14 @@ body{
     display: flex;
     gap: 4rem;
     background-color:rgb(185, 240, 175);
+    font-size: 1rem;
 }
 
 .exp-container{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -121,8 +137,8 @@ body{
     width: 95%;
     height: 550px;
     margin-top: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:50px;
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -150,7 +166,7 @@ body{
 }
 
 .circle {
-  width: 40px;
+  width: 2.5rem;
   height: 40px;
   border-radius: 50%;
   background-color: lightgray;
@@ -169,8 +185,8 @@ body{
     width: 95%;
     height: 250px;
     margin-top: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:50px;
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -195,8 +211,8 @@ body{
      width: 95%;
     height: 200px;
     margin-top: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius:50px;
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -215,6 +231,234 @@ body{
 .service{
     width: 20%;
 }
+
+@media only screen and (max-width: 1850px){
+    .circle{
+        width: 2.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1650px){
+    .circle{
+        width: 2.1rem;
+    }
+
+    .lang-container{
+        width: 95%;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .rating-container{
+        padding: 1rem 1rem;
+    }
+
+    .know-container{
+        font-size: 1.5rem;
+        
+    }
+
+}
+
+@media only screen and (max-width: 1260px){
+    .timeline-container{
+        height: 700px;
+        padding-top: 0;
+    }
+
+    .exp-container{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    
+    .lang-container{
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .know-container{
+        width: 100%;
+        font-size: 1rem;
+        margin: 2rem 0;
+    }
+
+    .rating-container{
+        height: 810px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .timeline-container{
+        width: 100%;
+        margin-left: 0 ;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .res-container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ser-container{
+        margin: auto 0;
+        width: 100%;
+        padding: 1rem 0.5rem;
+        gap: .5rem;
+        font-size: .8rem;
+    }
+
+    .circle{
+        width: 4rem;
+        height: 45px;
+    }
+
+    .navbar2{
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 790px){
+
+    
+
+    .res-container{
+        padding: 1rem .5rem;
+        box-sizing: border-box;
+    }
+
+    .timeline-container{
+        
+        height: 800px;
+        padding: 1rem 0.5rem;
+    }
+
+    .exp-container{
+        font-size: .8rem;
+    }
+
+    .circle{
+        width: 2.9rem;
+    }
+
+
+    .lang-container{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    .circle{
+        width: 2rem;
+    }
+
+    .rating-container{
+        padding: 1rem 1rem;
+    }
+
+    .lang-container{
+        align-items: flex-start;
+    }
+
+    .know-container{
+        height: 600px;
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    *{
+        overflow-x: hidden;
+    }
+
+    .resume{
+        font-size: 2rem;
+    }
+
+    .navbar2{
+        width: 100%;
+        padding: .5rem .5rem;
+    }
+
+    .timeline-container{
+        overflow: hidden;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        
+    }
+
+    .exp-container{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .res-container{
+        justify-content: center;
+        
+    }
+
+    .ser-container{
+        height: 420px;
+        padding: 1rem 1.3rem;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+
+    .service{
+        width: 100%;
+    }
+
+   
+}
+
+@media only screen and (max-width: 390px){
+    .timeline-container{
+        height: 1300px;
+    }
+
+    .ser-container{
+        height: 500px;
+    }
+
+    .know-container{
+        font-size: 1rem;
+        height: 500px;
+        padding: 1rem .5rem;
+    }
+    .res-container{
+        height: 700px;
+        font-size: .9rem;
+    }
+
+    .res-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar2{
+        padding: .5rem .5rem;
+    }
+    
+    .dev{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+
+}
+
 
 
 

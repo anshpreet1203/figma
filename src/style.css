@@ -167,14 +167,31 @@ body{
     
 }
 .name{
+     width: 22ch;
     letter-spacing: 2px;
     font-size: 4rem;
     color:  rgb(223, 224, 172);
     font-weight:800;
-    
-    
+    animation: typing 3s steps(14)infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 12px solid; 
 }
 
+@keyframes typing {
+   0% {
+        width: 0;
+    }
+    50%, 100% {
+        width: 14ch;
+    }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
 
 .text{
