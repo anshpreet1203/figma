@@ -132,12 +132,12 @@ const App = () => {
 
       <div className='brands'>
         <div className='brands-wrapper'>
+
           <img src='/fly.png' alt='logo' className='logos' ></img>
           <img src='/oas.png' alt='logo' className='logos' ></img>
           <img src='/my.webp' alt='logo' className='logos' ></img>
           <img src='/lance.png' alt='logo' className='logos' ></img>
           <img src='/logo.jpg' alt='logo' className='logos' ></img>
-
           <img src='/fly.png' alt='logo' className='logos' ></img>
           <img src='/oas.png' alt='logo' className='logos' ></img>
           <img src='/my.webp' alt='logo' className='logos' ></img>
@@ -196,33 +196,33 @@ const App = () => {
             <div className="carousel-item-wrapper">
               <div className="small-card">
                 <img src="/oas.png" alt="Slide 1" className="card-image" />
-                <h3>First Project</h3>
-                <p>Project details for the first project.</p>
-                <div className="visit-us">
+                        <h3> Title: Oas36ty</h3>
+                        <p>Office Automation Project</p>
+                        <a className="visit-us" href="https://oas36ty.com" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
-                </div>
+                </a>
               </div>
 
               <div className="small-card">
                 <img src="/my.webp" alt="Slide 2" className="card-image" />
-                <h3>Second Project</h3>
-                <p>Project details for the second project.</p>
-                <div className="visit-us">
+                        <h3> My Local Shop</h3>
+                        <p>E-commerce Project</p>
+                        <a className="visit-us" href="https://mylocalshop.in/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
-                </div>
+                </a>
               </div>
 
 
               <div className="small-card">
-                <img src="/logo.jpg" alt="Slide 3" className="card-image" />
-                <h3>Third Project</h3>
-                <p>Project details for the third project.</p>
-                <div className="visit-us">
+                <img src="/logo.jpg" alt="Slide 3" className="card-image"  />
+                        <h3> Wicca India</h3>
+                        <p>E-commerce Project</p>
+                        <a className="visit-us" href="https://wiccaindia.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
-                </div>
+                </a>
               </div>
             </div>
           </Carousel.Item>
@@ -230,22 +230,22 @@ const App = () => {
             <div className="carousel-item-wrapper">
               <div className="small-card">
                 <img src="/lance.png" alt="Slide 4" className="card-image" />
-                <h3>Fourth Project</h3>
-                <p>Project details for the fourth project.</p>
-                <div className="visit-us">
+                        <h3>Lanceark</h3>
+                        <p>Consumer Relationship Managment Project</p>
+                        <a className="visit-us" href=" https://lanceark.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
-                </div>
+                </a>
               </div>
 
               <div className="small-card">
                 <img src="/fly.png" alt="Slide 5" className="card-image" />
-                <h3>Fifth Project</h3>
-                <p>Project details for the fifth project.</p>
-                <div className="visit-us">
+                        <h3>Flynowithus</h3>
+                        <p>Flight Booking Project</p>
+                        <a className="visit-us" href="https://flynowithus.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
-                </div>
+                </a>
               </div>
 
               {/*<div className="small-card">

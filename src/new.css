@@ -25,6 +25,10 @@ body{
     padding: 2rem 5rem;
 }
 
+.resume{
+    color: white;
+}
+
 .tabs{
     display: flex;
     align-items: center;
@@ -87,8 +91,9 @@ body{
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
-    
-    background-color:rgb(185, 240, 175);
+    font-size: 1.1rem;
+    background-color:white;
+    color:#75B18D ;
 
 }
 
@@ -108,7 +113,7 @@ body{
 .timeline-container{
     /* background-color:white; */
     width: 95%;
-    height: 600px;
+    height: 920px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -116,21 +121,26 @@ body{
     padding-left: 2.5rem;
     padding-right: 2rem;
     padding-top: 2rem;
+    padding-bottom: 1rem;
     box-sizing: border-box;
     display: flex;
     gap: 4rem;
-    background-color:rgb(185, 240, 175);
-    font-size: 1rem;
+    background-color:white;
+    color: #75B18D ;
+    font-size: 1.1rem;
 }
 
 .exp-container{
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
+.t1{
+    font-size: 2rem;
+}
 /***ratingss***/
 
 .rating-container{
@@ -198,7 +208,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
-    background-color:rgb(185, 240, 175); 
+    background-color:white;
+    color: #75B18D ; 
     font-size: 2rem;
 }
 
@@ -220,12 +231,12 @@ body{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
-    background-color:rgb(185, 240, 175); 
-    font-size: 1rem;
+    background-color:white;
+    color: #75B18D ;
+    font-size: 1.1rem;
 }
 
 .service{
@@ -263,7 +274,7 @@ body{
 
 @media only screen and (max-width: 1260px){
     .timeline-container{
-        height: 700px;
+        height: 890px;
         padding-top: 0;
     }
 
@@ -294,16 +305,31 @@ body{
         margin-left: 0;
     }
 
+
+
     .timeline-container{
         width: 100%;
+        height: 860px;
+        padding: 1rem .8rem;
         margin-left: 0 ;
         margin-right: 0;
         font-size: 1rem;
     }
 
+    .exp-container{
+        gap: .5rem;
+        font-size: .95rem;
+    }
+
     .res-container{
         width: 100%;
         margin-left: 0;
+        padding: 0 .5rem;
+    }
+    .res-info{
+        
+        width: 100%;
+        font-size: .95rem;
     }
 
     .ser-container{
@@ -333,6 +359,10 @@ body{
         box-sizing: border-box;
     }
 
+    .res-info{
+        font-size: .8rem;
+    }
+
     .timeline-container{
         
         height: 800px;
@@ -350,6 +380,18 @@ body{
 
     .lang-container{
         height: 100%;
+    }
+
+    .tabs{
+        width: 60%;
+    }
+
+    .dev{
+        font-size: .9rem;
+    }
+
+    .navbar2{
+        padding: 1rem 0;
     }
 }
 
@@ -372,6 +414,14 @@ body{
         flex-wrap: nowrap;
         font-size: 1.2rem;
     }
+
+    .timeline-container{
+        flex-direction: column;
+    }
+
+    .exp-container{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 490px){
@@ -389,8 +439,8 @@ body{
     }
 
     .timeline-container{
-        overflow: hidden;
-        height: 1200px;
+        overflow: visible;
+        height: 890px;
         display: flex;
         flex-direction: column;
         padding: 1rem 0.5rem;
@@ -399,12 +449,17 @@ body{
 
     .exp-container{
         width: 100%;
-        overflow: hidden;
+        overflow:visible;
     }
 
     .res-container{
+        height: 600px;
         justify-content: center;
         
+    }
+    .res-info{
+        display: flex;
+        flex-direction: column;
     }
 
     .ser-container{
@@ -458,6 +513,45 @@ body{
 
 
 }
+
+
+/****progress bar****/
+.coding-container{
+    width: 95%;
+    margin: 7rem auto;
+    justify-content: space-between;
+    height: 150px;
+
+    
+}
+
+.circular-progress-container {
+  width: 160px; /* Increased width */
+  height: 160px; /* Increased height */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px; /* Adjusted font size for larger circle */
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-label strong {
+  display: block;
+  font-size: 20px; /* Adjusted percentage font size */
+  color: #4caf50;
+}
+
 
 
 
