@@ -98,9 +98,11 @@ const Resume = () => {
             </div>
 
 
-            <div className="project">About Me</div>
+            <div className="project1">About Me</div>
                 <div className="res-container">
-                <div className="res-text">Passionate Flutter Developer with expertise in Vue.js,
+                <div className="abt">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe" className="pp"></img>
+                    <div className="res-text">Passionate Flutter Developer with expertise in Vue.js,
                     React.js, PHP, JavaScript, SASS, SQL, and Kotlin. I excel at
                     creating robust web and mobile applications. Holding a
                     Bachelor of Vocational Studies in Software Development
@@ -108,7 +110,8 @@ const Resume = () => {
                     dedicated to delivering high-quality, user-friendly
                     solutions. Let's connect and collaborate on innovative
                     projects!
-            </div>
+                    </div>
+                </div>
 
                     <div className="res-info">
                     <div className="label"><span className="res-name">Name:</span>Dev Sindhwani</div>
@@ -120,6 +123,7 @@ const Resume = () => {
                     </div>
                 </div>
 
+            <div className="project1">Experience</div>
                 <div className="timeline-container">
                     <div className="exp-container">
                         <div className="t1">Experience</div>
