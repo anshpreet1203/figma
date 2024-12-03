@@ -162,7 +162,7 @@ const Resume = () => {
 
                     <div className="exp-container">
                     <div className="t1">Education</div>
-                    <div className="Year">Bachelor Of Vocational Studies in Software
+                    <div className="year">Bachelor Of Vocational Studies in Software
                         Development (BCA)</div>
                     <div className="designation">Integrated Institute of Technology</div>
                     <div className="time-info">01/2021 - 05/2023</div>

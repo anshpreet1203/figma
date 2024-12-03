@@ -14,7 +14,7 @@ body{
 }
 
 .resume-container{
-    width: 90%;
+    width: 95%;
     background: linear-gradient(to top, #468585, #75B18D);
     height: 600px;
     margin: 0 auto;
@@ -116,6 +116,7 @@ body{
     font-size: 1.1rem;
     color:#75B18D ;
 
+
 }
 
 .res-text{
@@ -139,14 +140,13 @@ body{
 /****timeline***/
 .timeline-container{
     /* background-color:white; */
-    width: 95%;
+    width: 85%;
     height: 920px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     border-radius:50px;
-    padding-left: 2.5rem;
-    padding-right: 2rem;
+    
     padding-top: 2rem;
     padding-bottom: 1rem;
     box-sizing: border-box;
@@ -163,7 +163,36 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
+    padding-left: 2rem;
+    border-left: 1px solid black;
 }
+.company{
+    position: relative;
+    padding-top:.5rem ;
+}
+
+.company::before{
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: -4%; /* Start at 40% of the div's width */
+    width: 20%; /* Span 20% of the div's width */
+    border-top: 2px solid black; /* Top border */
+}
+.year{
+    position: relative;
+    padding-top: .5rem;
+}
+
+.year::before{
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: -4%; /* Start at 40% of the div's width */
+    width: 20%; /* Span 20% of the div's width */
+    border-top: 2px solid black; /* Top border */
+}
+
 
 .t1{
     font-size: 2rem;
