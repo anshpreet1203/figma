@@ -22,6 +22,7 @@ const Resume = () => {
     const projectsRef = useRef(null);
     const aboutRef = useRef(null);
     const discussRef = useRef(null);
+    const abtRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen); // Toggle dropdown
@@ -93,12 +94,12 @@ const Resume = () => {
                 </div>
 
             <div className="resume">Resume
-                <FontAwesomeIcon icon={faComputerMouse} className="mouse"/>
+                    <FontAwesomeIcon icon={faComputerMouse} className="mouse" onClick={() => scrollToSection(abtRef)} />
             </div>
             </div>
 
 
-            <div className="project1">About Me</div>
+            <div className="project1" ref={abtRef}>About Me</div>
                 <div className="res-container">
                 <div className="abt">
                     <img src="https://ui-avatars.com/api/?name=John+Doe" className="pp"></img>
