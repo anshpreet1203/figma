@@ -181,7 +181,7 @@ const Resume = () => {
 
                 </div>
 
-            <div className="project">Skills</div>
+            <div className="project1">Skills</div>
                 {/*ratings*/}
                 <div className="rating-container">
                     <div className="lang-container">
@@ -237,7 +237,7 @@ const Resume = () => {
             </div>
 
                 {/**KNOWLEDGEE */}
-                <div className="project">Knowledge</div>
+                <div className="project1">Knowledge</div>
                 <div className="know-container">
                     <div className="devlop"> <FontAwesomeIcon icon={faCheck} className="tick" />Website Development</div>
 
@@ -254,7 +254,7 @@ const Resume = () => {
                 </div>
 
                 {/**My services */}
-            <div className="project">Services</div>
+            <div className="project1">Services</div>
                 <div className="ser-container">
                     <div className="service">
                         <div className="front">Front-end</div>

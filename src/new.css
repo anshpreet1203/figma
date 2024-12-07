@@ -87,7 +87,8 @@ body{
 .project1{
     margin-left: 6rem;
     margin-top: 4rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .pp{
@@ -114,14 +115,15 @@ body{
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
-    font-size: 1.1rem;
-    color:#75B18D ;
+    font-size: 1.5rem;
+    color:black ;
 
 
 }
 
 .res-text{
     width: 90%;
+    
 }
 
 .res-info{
@@ -166,6 +168,8 @@ body{
     gap: 1rem;
     padding-left: 2rem;
     border-left: 1px solid black;
+    color: black;
+    font-size: 1.2rem;
 }
 .company{
     position: relative;
@@ -265,7 +269,7 @@ body{
     align-items: center;
     gap: 3rem;
     background-color:white;
-    color: #75B18D ; 
+    color: black ; 
     font-size: 2rem;
 }
 
@@ -291,7 +295,7 @@ body{
     align-items: center;
     gap: 3rem;
     background-color:white;
-    color: #75B18D ;
+    color: black ;
     font-size: 1.1rem;
 }
 
