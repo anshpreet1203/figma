@@ -13,6 +13,15 @@ body{
 
 }
 
+.coding-container{
+    width: 90%;
+    margin: 7rem auto;
+    justify-content: space-between;
+    height: 150px;
+
+    
+}
+
 .resume-container{
     width: 95%;
     background: linear-gradient(to top, #468585, #75B18D);
@@ -85,10 +94,11 @@ body{
 
 
 .project1{
-    margin-left: 6rem;
-    margin-top: 4rem;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .pp{
@@ -136,8 +146,15 @@ body{
 }
 
 .res-name{
-    margin-right: .4rem;
+    margin-right: .8rem;
+    font-weight: 700;
 }
+
+.designation{
+    font-weight: 700;
+}
+
+
 
 
 /****timeline***/
@@ -174,6 +191,7 @@ body{
 .company{
     position: relative;
     padding-top:.5rem ;
+    font-weight: 700;
 }
 
 .company::before{
@@ -237,7 +255,7 @@ body{
 
 .circle {
   width: 1.5rem;
-  height: 22px;
+  height: 24px;
   border-radius: 50%;
   background-color: lightgray;
 }
@@ -266,7 +284,7 @@ body{
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    
     gap: 3rem;
     background-color:white;
     color: black ; 
@@ -280,7 +298,7 @@ body{
 /*Services*/
 .ser-container{
      width: 95%;
-    height: 200px;
+    height:270px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -289,18 +307,34 @@ body{
     padding-right: 2rem;
     padding-top: 1rem;
     box-sizing: border-box;
+    background-color:white;
+    color: black;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 3rem;
-    background-color:white;
-    color: black ;
-    font-size: 1.1rem;
+   
 }
 
+.ser{
+    width: 70%;
+      display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.service {
+    flex: 1 1 30%; /* Adjust the width of each item */
+    max-width: 30%; /* Prevent items from exceeding 30% width */
+    margin-bottom: 1rem; /* Add space between rows */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+
+
 .service{
-    width: 20%;
+    width: 80%;
 }
 
 @media only screen and (max-width: 1850px){
@@ -330,9 +364,20 @@ body{
         
     }
 
+    .ser-container{
+        height: 370px;
+    }
+
 }
 
 @media only screen and (max-width: 1260px){
+    *{
+        overflow-x: hidden;
+    }
+
+    .res-container{
+        height: 500px;
+    }
     .timeline-container{
         height: 890px;
         padding-top: 0;
@@ -341,9 +386,21 @@ body{
     .exp-container{
         font-size: .9rem;
     }
+    .ser{
+       
+    }
+
+    .ser-container{
+        height: 390px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 980px){
+    *{
+        overflow-x: hidden;
+    }
     
     .lang-container{
         flex-wrap: nowrap;
@@ -369,7 +426,7 @@ body{
 
     .timeline-container{
         width: 100%;
-        height: 860px;
+        height: 950px;
         padding: 1rem .8rem;
         margin-left: 0 ;
         margin-right: 0;
@@ -408,15 +465,35 @@ body{
     .navbar2{
         padding: 2rem 1rem;
     }
+
+    .coding-container{
+        width: 95%;
+        margin: 2rem auto;
+        height: 170px;
+    }
 }
 
 @media only screen and (max-width: 790px){
 
-    
+    *{
+        overflow-x: hidden;
+    }
+
+    .ser-container{
+        height: 350px;
+    }
+
+    .service{
+        max-width: 40%;
+    }
 
     .res-container{
         padding: 1rem .5rem;
         box-sizing: border-box;
+    }
+
+    .res-text{
+        font-size: 1rem;
     }
 
     .res-info{
@@ -425,7 +502,7 @@ body{
 
     .timeline-container{
         
-        height: 800px;
+        height: 950px;
         padding: 1rem 0.5rem;
     }
 
@@ -453,6 +530,12 @@ body{
     .navbar2{
         padding: 1rem 0;
     }
+
+    .coding-container{
+        flex-wrap: wrap;
+        overflow: visible;
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -477,18 +560,41 @@ body{
 
     .timeline-container{
         flex-direction: column;
+        height: 950px;
     }
 
     .exp-container{
         width: 100%;
     }
+
+    .res-container{
+        height: 500px;
+    }
+
+    .coding-container{
+        height: 470px;
+    }
+
+    .ser-container{
+        overflow: visible;
+        height: 520px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ser{
+        flex-direction: column
+    }
+
+    .service{
+        max-width:100% ;
+    }
+
+   
 }
 
 @media only screen and (max-width: 490px){
-    *{
-        overflow-x: hidden;
-    }
-
+    
     .resume{
         font-size: 2rem;
     }
@@ -517,22 +623,31 @@ body{
         justify-content: center;
         
     }
+
+    .res-text{
+        font-size: 1rem;
+    }
+
+    
     .res-info{
         display: flex;
         flex-direction: column;
     }
 
     .ser-container{
-        height: 420px;
+       
         padding: 1rem 1.3rem;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-
     }
 
-    .service{
-        width: 100%;
+    .ser{
+        flex-direction: column;
+        
+    }
+
+   
+
+    .coding-container{
+        height: 450px;
     }
 
    
@@ -540,11 +655,22 @@ body{
 
 @media only screen and (max-width: 390px){
     .timeline-container{
-        height: 1300px;
+        height: 1000px;
     }
 
     .ser-container{
-        height: 500px;
+        height: 600px;
+    }
+
+    .ser{
+        flex-direction: column;
+    }
+    .service{
+        width: 95%;
+    }
+
+    .f-abt{
+        width: 100%;
     }
 
     .know-container{
@@ -571,19 +697,24 @@ body{
         font-size: 1rem;
     }
 
+    .project1{
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .coding-container{
+        height: auto;
+        justify-content: center;
+    }
+
+    
+
 
 }
 
 
 /****progress bar****/
-.coding-container{
-    width: 90%;
-    margin: 7rem auto;
-    justify-content: space-between;
-    height: 150px;
 
-    
-}
 
 .circular-progress-container {
   width: 160px; /* Increased width */

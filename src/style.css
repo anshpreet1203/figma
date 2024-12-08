@@ -401,7 +401,7 @@ body{
 }
 
 .small-card {
-  flex: 0 0 30%; /* Each card takes up 30% of the carousel's width */
+  flex: 0 0 29%; /* Each card takes up 30% of the carousel's width */
   padding: 2rem 1rem 10px 2rem;
   height: 100%;
    display: flex;
@@ -444,7 +444,11 @@ body{
 
 .carousel-container .carousel-caption p {
   color: #ccc; /* Light gray for description text */
-  font-size: 1rem;
+  font-size: .7rem;
+}
+
+.p-s{
+    font-size: .8rem;
 }
 
 /* Ensure carousel controls and indicators are well styled */
@@ -593,6 +597,11 @@ body{
     .tab-btn{
         gap: 2rem;
     }
+
+    .small-card{
+        flex: 0 0 28.5%;
+        height: 380px;
+    }
 }
 
 
@@ -663,7 +672,13 @@ body{
     }
 
     .small-card{
-        flex: 0 0 50%;
+        flex: 0 0 28%;
+    }
+
+    .carousel-item-wrapper{
+        gap: 2rem;
+        
+       
     }
 
 
@@ -696,9 +711,7 @@ body{
 
 @media only screen and (max-width: 800px){
 
-   *{
-    overflow-x: hidden;
-   }
+   
 
 .first-container{
     margin: 0 0 0 0 ;
@@ -886,6 +899,9 @@ height: 200px;
         margin-bottom: 4rem;
         height: 873px;
     }
+    h3{
+        overflow: hidden;
+    }
     
     .cell{
         height: 50%;
@@ -950,11 +966,31 @@ height: 200px;
         width: 100%;
     }
     
+     .carousel-container {
+    display: flex;
+   
+    scroll-snap-type: x mandatory; /* Snap cards when scrolling horizontally */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  }
 
+  .carousel-item-wrapper {
+    display: flex; /* Horizontal layout */
+    flex-direction: column;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 1rem; 
+    
+    align-items: center;
+    justify-content: center;/* No gap to keep alignment clean */
+  }
 
-    .small-card{
-        flex: 0 0 100%;
-    }
+  .small-card {
+    flex: 0 0 100%; /* Each card takes full width */
+    scroll-snap-align: center; /* Snap each card to the center of the viewport */
+    
+     /* Add spacing between cards */
+  }
+
+  
 
     .text{
         font-size: 1.1rem;

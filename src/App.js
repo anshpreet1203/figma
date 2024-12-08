@@ -197,7 +197,7 @@ const App = () => {
               <div className="small-card">
                 <img src="/oas.png" alt="Slide 1" className="card-image" />
                         <h3> Title: Oas36ty</h3>
-                        <p>Office Automation Project</p>
+                        <p className="p-s">Office Automation Project</p>
                         <a className="visit-us" href="https://oas36ty.com" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
@@ -207,7 +207,7 @@ const App = () => {
               <div className="small-card">
                 <img src="/my.webp" alt="Slide 2" className="card-image" />
                         <h3> My Local Shop</h3>
-                        <p>E-commerce Project</p>
+                        <p className="p-s">E-commerce Project</p>
                         <a className="visit-us" href="https://mylocalshop.in/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
@@ -218,7 +218,7 @@ const App = () => {
               <div className="small-card">
                 <img src="/logo.jpg" alt="Slide 3" className="card-image"  />
                         <h3> Wicca India</h3>
-                        <p>E-commerce Project</p>
+                        <p className="p-s">E-commerce Project</p>
                         <a className="visit-us" href="https://wiccaindia.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
@@ -231,7 +231,7 @@ const App = () => {
               <div className="small-card">
                 <img src="/lance.png" alt="Slide 4" className="card-image" />
                         <h3>Lanceark</h3>
-                        <p>Consumer Relationship Managment Project</p>
+                        <p className="p-s"> Consumer Relationship Managment Project</p>
                         <a className="visit-us" href=" https://lanceark.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>
@@ -241,7 +241,7 @@ const App = () => {
               <div className="small-card">
                 <img src="/fly.png" alt="Slide 5" className="card-image" />
                         <h3>Flynowithus</h3>
-                        <p>Flight Booking Project</p>
+                        <p className="p-s">Flight Booking Project</p>
                         <a className="visit-us" href="https://flynowithus.com/" target="_blank" rel="noopener noreferrer">
                   Visit Us
                   <img src="/arrow.png" alt="arw" className="arw-1"></img>

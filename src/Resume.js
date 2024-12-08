@@ -124,12 +124,12 @@ const Resume = () => {
                     </div>
                 </div>
 
-            <div className="project1">Experience</div>
+            <div className="project1"> Experience</div>
                 <div className="timeline-container">
                     <div className="exp-container">
-                        <div className="t1">Experience</div>
+                        <div className="t1">Work Experience</div>
                     <div className="company">Novative Solutions Pvt Ltd (Oas36ty)</div>
-                    <div className="Year">07/2022 - Present</div>
+                    <div className="Year">July,2022 - Present</div>
                     <div className="designation">Software Analyst</div>
                     <div className="time-info">Developed Automation tool and SASS application!
                         Integrate GMAIL System in our product!<br />
@@ -140,7 +140,7 @@ const Resume = () => {
                         Worked as Team Leader in the company</div>
 
                     <div className="company">Brandshark</div>
-                    <div className="Year">01/2022 - 03/2022</div>
+                    <div className="Year">January, 2022 - March, 2022</div>
                     <div className="designation">Mobile Application Developer</div>
                     <div className="time-info">Developed database and coded user input frontend.
                         Responsible for day-to-day system operation, daily scrum
@@ -151,7 +151,7 @@ const Resume = () => {
 
 
                     <div className="company">Uipro Corporation</div>
-                    <div className="Year">10/2021 - 01/2022</div>
+                    <div className="Year">October, 2021 - January, 2022</div>
                     <div className="designation">Laravel Developer</div>
                     <div className="time-info">Full-life cycle web development experience using PHP and
                         MYSQL.
@@ -256,34 +256,39 @@ const Resume = () => {
                 {/**My services */}
             <div className="project1">Services</div>
                 <div className="ser-container">
+                    
+                    <div className="ser">
                     <div className="service">
                         <div className="front">Front-end</div>
                         <div className="f-abt">
                             Front-end web development enhances the look and touches of your website through a graphical user interface.
                         </div>
                     </div>
+                    
 
                     <div className="service">
                         <div className="front">Back-end</div>
                         <div className="f-abt">
 
-                        Back-end web development infuses the logic in your website to make it alive and helps in a dynamic experience.
+                            Back-end web development infuses the logic in your website to make it alive and helps in a dynamic experience.
                         </div>
                     </div>
 
                     <div className="service">
                         <div className="front">Android-Development</div>
                         <div className="f-abt">
-                        Android app development is the process of creating mobile apps for devices that run the Android operating system.
+                            Android app development is the process of creating mobile apps for devices that run the Android operating system.
                         </div>
                     </div>
 
                     <div className="service">
                         <div className="front">Shopify-Development</div>
                         <div className="f-abt">
-                        Shopify is a complete commerce platform that lets you start, grow, and manage a business.
+                            Shopify is a complete commerce platform that lets you start, grow, and manage a business.
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
 
 
