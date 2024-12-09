@@ -161,7 +161,7 @@ body{
 .timeline-container{
     /* background-color:white; */
     width: 85%;
-    height: 920px;
+    height: 1000px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -364,6 +364,10 @@ body{
         
     }
 
+    .timeline-container{
+        height: 1200px;
+    }
+
     .ser-container{
         height: 370px;
     }
@@ -371,9 +375,7 @@ body{
 }
 
 @media only screen and (max-width: 1260px){
-    *{
-        overflow-x: hidden;
-    }
+    
 
     .res-container{
         height: 500px;
@@ -395,18 +397,35 @@ body{
         display: flex;
         justify-content: center;
     }
+
+    .rating-container{
+        overflow-x: hidden;
+        
+    }
+
+    .circle-container{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 980px){
-    *{
-        overflow-x: hidden;
-    }
+    
     
     .lang-container{
         flex-wrap: nowrap;
         width: 100%;
         height: 100%;
         margin-left: 0;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .lang{
+        width: 80%;
+    }
+
+    .circle-container{
+        width: 100%;
     }
 
     .know-container{
@@ -416,10 +435,11 @@ body{
     }
 
     .rating-container{
-        height: 810px;
+        height: 820px;
         width: 100%;
         margin-right: 0;
         margin-left: 0;
+        
     }
 
 
@@ -549,7 +569,15 @@ body{
     }
 
     .lang-container{
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .circle-container{
+        width: 100%;
+    }
+
+    .lang{
+        width: 100%;
     }
 
     .know-container{
@@ -599,6 +627,19 @@ body{
         font-size: 2rem;
     }
 
+    .rating-container{
+        width: 97%;
+        margin: 2rem auto;
+    }
+
+    .circle{
+        height: 20px;
+    }
+
+    .rating-container{
+        height: 600px;
+    }
+
     .navbar2{
         width: 100%;
         padding: .5rem .5rem;
@@ -635,8 +676,9 @@ body{
     }
 
     .ser-container{
-       
+       width: 97%;
         padding: 1rem 1.3rem;
+        margin: 2rem auto;
     }
 
     .ser{
@@ -644,7 +686,10 @@ body{
         
     }
 
-   
+   .know-container{
+    width: 97%;
+    margin: 2rem auto;
+   }
 
     .coding-container{
         height: 450px;
@@ -679,7 +724,7 @@ body{
         padding: 1rem .5rem;
     }
     .res-container{
-        height: 700px;
+        height: 750px;
         font-size: .9rem;
     }
 
@@ -707,7 +752,13 @@ body{
         justify-content: center;
     }
 
-    
+    .circle{
+        height: 20px;
+    }
+
+    .rating-container{
+        height: 600px;
+    }
 
 
 }
