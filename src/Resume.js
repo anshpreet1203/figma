@@ -38,8 +38,16 @@ const Resume = () => {
     { skill: "App Development", percentage: 82 },
     { skill: "Shopify Development", percentage: 98 },
     { skill: "Database Management", percentage: 89 },
-    { skill: "Website App Development", percentage: 96 },
+    { skill: "Server Managment", percentage: 96 },
   ];
+
+  //    const downloadPDF = () => {
+  //      const pdfPath = process.env.PUBLIC_URL + "/documents/example.pdf"; // Path to your PDF file
+  //      const link = document.createElement("a");
+  //      link.href = pdfPath;
+  //      link.download = "example.pdf"; // Name of the file when downloaded
+  //      link.click();
+  //    };
 
   return (
     <div>
@@ -118,12 +126,9 @@ const Resume = () => {
       </div>
       <div className="res-container">
         <div className="abt">
-          <img
-            src="https://ui-avatars.com/api/?name=John+Doe"
-            className="pp"
-          ></img>
+          <img src="profile.jpg" className="pp"></img>
           <div className="res-text">
-            Passionate Flutter Developer with expertise in Vue.js, React.js,
+            Passionate Full-Stack Developer with expertise in Vue.js, React.js,
             PHP, JavaScript, SASS, SQL, and Kotlin. I excel at creating robust
             web and mobile applications. Holding a Bachelor of Vocational
             Studies in Software Development from the Integrated Institute of
@@ -149,9 +154,21 @@ const Resume = () => {
             <span className="res-name">Residence:</span>Delhi
           </div>
           <div className="label">
-            <span className="res-name">Email:</span>dev16sindh@gmail.com
+            <span className="res-name">Email:</span>
+            <a href="mailto:dev16sindh@gmail.com" className="decoration-none">
+              dev16sindh@gmail.com
+            </a>
           </div>
         </div>
+      </div>
+
+      <div className="res-container-resume">
+        <a href="/DevResume.pdf" target="_new">
+          <button type="button" className="mbt-4">
+            {" "}
+            Download Resume
+          </button>
+        </a>
       </div>
 
       <div className="project1"> Experience</div>

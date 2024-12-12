@@ -232,7 +232,7 @@ const App = () => {
                           alt="Slide 1"
                           className="card-image"
                         />
-                        <h3> Title: Oas36ty</h3>
+                        <h3> Oas36ty</h3>
                         <p className="p-s">Office Automation Project</p>
                         <a
                           className="visit-us"
@@ -368,12 +368,12 @@ const App = () => {
               <div className="third-container">
                 <div className="abt-content">
                   <div className="txt-abt">
-                    We are a team of skilled software developers with a deep
-                    expertise in modern web and mobile technologies, including
-                    Vue.js, React.js, PHP, Laravel, CodeIgniter, Kotlin, and
-                    Flutter. Our passion lies in creating user-focused
-                    applications that simplify workflows, optimize processes,
-                    and add tangible value to our clients' operations.
+                    As a proficient software developer, I specialize in modern
+                    web and mobile technologies such as Vue.js, React.js, PHP,
+                    Laravel, CodeIgniter, Kotlin, and Flutter. I am passionate
+                    about crafting user-centric applications that streamline
+                    workflows, enhance processes, and deliver real value to my
+                    clients.
                   </div>
                 </div>
 

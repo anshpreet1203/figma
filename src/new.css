@@ -137,7 +137,7 @@ body{
 }
 
 .res-info{
-    width: 92.5%;
+    width: 90%;
      display: grid;                 /* Enable grid layout */
     grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
      grid-template-rows: repeat(2, auto);  /* 2 rows */

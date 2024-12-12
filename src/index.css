@@ -11,6 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mbt-4{
+  /* padding-bottom: 8rem; */
+      border: 1px solid orange;
+        border-radius: 4px;
+        background: orange;
+        color: white;
+        padding: 11px;
+        font-size: 22px;
+        font-weight: bold;
+}
+
+.res-container-resume{
+      padding-top: 3rem;
+        text-align: center;
+        margin-inline: 4rem;
+}
 
 .decoration-none {
   text-decoration: none;
