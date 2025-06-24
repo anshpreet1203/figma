@@ -102,7 +102,7 @@ const Resume = () => {
             <div className="project1" ref={abtRef}>About Me</div>
             <div className="res-container">
                 <div className="abt">
-                    <img src="https://ui-avatars.com/api/?name=John+Doe" className="pp"></img>
+                    <img src="https://ui-avatars.com/api/?name=John+Doe" alt="dk" className="pp"></img>
                     <div className="res-text">Passionate Flutter Developer with expertise in Vue.js,
                         React.js, PHP, JavaScript, SASS, SQL, and Kotlin. I excel at
                         creating robust web and mobile applications. Holding a
