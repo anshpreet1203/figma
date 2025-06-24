@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./style.css";
 
 const ScoreIndicator = ({ score }) => {
@@ -9,7 +9,7 @@ const ScoreIndicator = ({ score }) => {
       {Array.from({ length: totalCircles }, (_, index) => (
         <div
           key={index}
-          className={`circle ${index < score ? 'filled' : ''}`}
+          className={`circle ${index < score ? "filled" : ""}`}
         ></div>
       ))}
     </div>
