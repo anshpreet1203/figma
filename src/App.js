@@ -135,7 +135,7 @@ const App = () => {
 
               {/* BRANDS */}
 
-              <div className='brands'>
+              {/**<div className='brands'>
                 <div className='brands-wrapper'>
 
                   <img src='/fly.png' alt='logo' className='logos' ></img>
@@ -151,7 +151,7 @@ const App = () => {
 
 
                 </div>
-              </div>
+              </div> */}
 
 
 
