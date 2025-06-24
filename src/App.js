@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Carousel from "react-bootstrap/Carousel"; // Import Carousel
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import "./style.css";
@@ -20,7 +20,6 @@ const App = () => {
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
-  const discussRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle dropdown
@@ -61,21 +60,27 @@ const App = () => {
                         {/*<li><Link to="/resume" onClick={() => setIsOpen(false)} className="link">Resume</Link></li>*/}
 
                         <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
-                        <li
-                          onClick={() => scrollToSection(discussRef)}
-                          className="contact-li"
-                        >
-                          Contact Us
+
+                        <li className="contact-li">
+                          <a
+                            href="https://wa.me/919205072662"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            Contact Us
+                          </a>
                         </li>
+
+
+
                       </ul>
                     </div>
 
                     <div
-                      className="contact-nav"
-                      onClick={() => scrollToSection(discussRef)}
-                    >
+                      className="contact-nav" >
                       <a
-                        href="tel:7428040855"
+                        href="https://wa.me/919205072662"
                         style={{ textDecoration: "none", color: "rgb(15, 62, 46)" }}
                       >
                         Contact Us
@@ -282,10 +287,10 @@ const App = () => {
               </div>
 
               {/* DISCUSSION */}
-              <div className="fourth-container" ref={discussRef}>
+              <div className="fourth-container" >
                 <div className="discuss">Let's Discuss About Your Project</div>
                 <a
-                  href="tel:7428040855"
+                  href="https://wa.me/919205072662"
                   className="num"
                   style={{ textDecoration: "none" }}
                 >
